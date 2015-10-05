@@ -8,7 +8,7 @@ public class Main {
 		int numberOfPairs = Integer.parseInt(scanner.nextLine());
 		for(int i = 0; i < numberOfPairs; i++){
 			String s = scanner.nextLine();
-			
+			s = s.trim();
 			//extract integers and create new pair
 			// check if the string matches the required pattern
 			Pattern p = Pattern.compile("\\((\\d+),(\\d+)\\)");
