@@ -13,8 +13,8 @@ public class Pair {
 	}
 	
 	public boolean isRA(){
-		int sumX = 0;
-		int sumY = 0;
+		int xSum = 0;
+		int ySum = 0;
 		
 		ArrayList<Integer> xFactors = primeFactors(x);
 		ArrayList<Integer> yFactors = primeFactors(y);
@@ -22,18 +22,18 @@ public class Pair {
 		for(int i = 0; i < xFactors.size(); i++){
 			Integer current = xFactors.get(i);
 			if(!yFactors.contains(current)){
-				sumX += current.intValue();
+				xSum += current.intValue();
 			}
 		}
 		
 		for(int i = 0; i < yFactors.size(); i++){
 			Integer current = yFactors.get(i);
 			if(!xFactors.contains(current)){
-				sumY += current.intValue();
+				ySum += current.intValue();
 			}
 		}
 		
-		return (sumX == sumY);
+		return (xSum == ySum);
 	}
 	
 	public ArrayList<Integer> primeFactors (int n){
