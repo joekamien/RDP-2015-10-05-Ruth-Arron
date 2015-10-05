@@ -7,19 +7,23 @@ public class Main {
 		Scanner scanner = new Scanner (System.in); 
 		int numberOfPairs = Integer.parseInt(scanner.nextLine());
 		for(int i = 0; i < numberOfPairs; i++){
-			//TODO input validation
 			String s = scanner.nextLine();
+			
 			//extract integers and create new pair
-			Pattern p = Pattern.compile("\\(\\d+,\\d+\\)");
+			// check if the string matches the required pattern
+			Pattern p = Pattern.compile("\\((\\d+),(\\d+)\\)");
 			Matcher m = p.matcher(s);
-			if(m.matches()){
-				System.out.println("Matched");
+			
+			// if it didn't match or extracted less than two integers, then there's an error
+			//    so move on to the next line
+			if(!m.matches() || m.groupCount() < 2){
+				System.err.println("Error extracting input from line: " + s);
+				continue;
 			}
-			else{
-				System.out.println("did not match");
-			}
-			//Pair pair = new Pair(Integer.parseInt(m.group(0)), Integer.parseInt(m.group(1)));
-			//System.out.println(pair);
+			
+			//create new pair
+			Pair pair = new Pair(Integer.parseInt(m.group(1)), Integer.parseInt(m.group(2)));
+			
 		}
 		scanner.close();
 	}
