@@ -24,6 +24,16 @@ public class Main {
 			//create new pair
 			Pair pair = new Pair(Integer.parseInt(m.group(1)), Integer.parseInt(m.group(2)));
 			
+			//print pair and whether it's valid or invalid
+			System.out.print(pair);
+			System.out.print(" ");
+			if(pair.isRA()){
+				System.out.print("VALID");
+			}
+			else{
+				System.out.print("NOT VALID");
+			}
+			System.out.println();
 		}
 		scanner.close();
 	}
