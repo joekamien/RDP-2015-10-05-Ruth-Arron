@@ -1,10 +1,10 @@
 ## Summary
-This is my approach to the Reddit daily programmer challenge [2015-10-05 (Ruth Allen Pairs)](https://www.reddit.com/r/dailyprogrammer/comments/3nkanm/20151005_challenge_235_easy_ruthaaron_pairs/).
+This is my approach to the Reddit daily programmer challenge [2015-10-05 (Ruth Arron Pairs)](https://www.reddit.com/r/dailyprogrammer/comments/3nkanm/20151005_challenge_235_easy_ruthaaron_pairs/).
 
 ## LICENSE
 (The MIT License)
 
-Copyright © 2015 Joseph Kamien
+Copyright Â© 2015 Joseph Kamien
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
