@@ -3,9 +3,9 @@ import java.util.ArrayList;
 public class Pair {
 	int x, y;
 	
-	public Pair (int myX, int myY){
-		x = myX;
-		y = myY;
+	public Pair (int x, int y){
+		this.x = x;
+		this.y = y;
 	}
 	
 	public String toString(){
